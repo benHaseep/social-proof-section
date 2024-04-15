@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* .outfit-<uniquifier> {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+} */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 77%;
+  font-family: "Outfit", sans-serif;
+  font-size: 15px;
+}
+
+.container .up,
+.container .down {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+
+.container .up .intro {
+  width: 40%;
+}
+
+.container .up .intro .title {
+  color: hsl(300, 43%, 22%);
+  font-weight: 800;
+  font-size: 45px;
+  line-height: 1;
+}
+
+.container .up .intro .about {
+  margin-top: 25px;
+  color: hsl(303, 10%, 53%);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.container .up .rate {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column wrap;
+}
+
+.container .up .rate .rate-card {
+  width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  background-color: hsl(300, 24%, 96%);
+  margin: 10px 0;
+  padding: 15px 20px;
+  border-radius: 7px;
+}
+
+.container .up .rate .rate-card:nth-child(1) {
+  align-self: flex-start;
+}
+.container .up .rate .rate-card:nth-child(2) {
+  align-self: center;
+}
+.container .up .rate .rate-card:nth-child(3) {
+  align-self: flex-end;
+}
+
+.container .up .rate .rate-card .stars {
+  margin-right: 24px;
+}
+
+.container .up .rate .rate-card img {
+  margin-right: 5px;
+  width: 15px;
+}
+
+.container .up .rate .rate-card p {
+  font-weight: 600;
+  color: hsl(300, 43%, 22%);
+}
+
+/* ========================================= */
+.container .down {
+  min-height: 230px; 
+  gap: 20px;
+  height: 50%;
+  justify-content: center;
+}
+
+.container .down .testemonials-card {
+  width: 280px;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 7px;
+  color: hsl(300, 24%, 96%);
+  padding: 35px 25px;
+}
+
+/* .container .down .testemonials-card:nth-child(1) {
+  align-self: flex-start;
+}
+
+.container .down .testemonials-card:nth-child(2) {
+  align-self: center;
+}
+
+.container .down .testemonials-card:nth-child(3) {
+  align-self: flex-end;
+} */
+
+.container .down .testemonials-card .author {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.container .down .testemonials-card .author img {
+  border-radius: 50%;
+  width: 40px;
+}
+.container .down .testemonials-card .author p {
+  font-size: 16px;
+}
+.container .down .testemonials-card .author .name {
+  font-weight: 700;
+}
+.container .down .testemonials-card .author .label {
+  color: hsl(333, 80%, 67%);
+}
+.container .down .testemonials-card .message {
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+/* === Footer === */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* === media-queries === */
+@media (max-width: 1000px) {
+  body {
+
+  }
+  .container {
+    width: 100%;
+  }
+  .container .up {
+    flex-flow: column;
+    text-align: center;
+  }
+  .container .up .intro {
+    width: 100%;
+  }
+  .container .up .intro .about {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container .up .rate {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .container .up .rate .rate-card {
+    flex-flow: column;
+    width: 330;
+    padding: 20px 0;
+    justify-content: center;
+    gap: 10px;
+  }
+  .container .up .rate .rate-card:nth-child(1) {
+    align-self: center;
+  }
+  .container .up .rate .rate-card:nth-child(2) {
+    align-self: center;
+  }
+  .container .up .rate .rate-card:nth-child(3) {
+    align-self: center;
+  }  
+
+  .container .down {
+    margin-top: 30px;
+    justify-content: center;
+  }
+}
